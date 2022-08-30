@@ -7,6 +7,7 @@
     <feature-view/>
     <tab-control class="tab-control" 
     :titles="['流行', '精选',  '新款']" @tabClick="tabClick"/>
+    <input type="text">
     <good-list :goods="showGoods"/>
     
     
@@ -27,10 +28,8 @@ import FeatureView from './childComps/FeatureView'
 
 import  {getHomeMultidata, getHomeGoods } from '@/network/home'
 
-
-
-
 export default {
+name: 'fdfdsf',
 components: {
   NavBar,
   TabControl,
