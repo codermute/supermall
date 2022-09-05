@@ -13,7 +13,6 @@ const state = {
   cartList: []
 }
 
-
 const store = new Vuex.Store({
   state,
   mutations,
@@ -21,7 +20,5 @@ const store = new Vuex.Store({
   getters
 })
 
-
 //3.挂载vue实例上
 export default store
-

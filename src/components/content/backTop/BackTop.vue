@@ -1,24 +1,22 @@
 <template>
   <div class="back-top">
-      <!-- <img src="@/assets/img/common/top.png" alt=""> -->
+    <!-- <img src="@/assets/img/common/top.png" alt=""> -->
   </div>
 </template>
 
 <script>
-export default {
-  
-}
+export default {};
 </script>
 
 <style>
-    .back-top {
-        position: fixed;
-        right: 8px;
-        bottom: 54px;
-    }
+.back-top {
+  position: fixed;
+  right: 8px;
+  bottom: 54px;
+}
 
-    .back-top img {
-        width: 43px;
-        height: 43px;
-    }
+.back-top img {
+  width: 43px;
+  height: 43px;
+}
 </style>

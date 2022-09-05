@@ -1,39 +1,36 @@
 <template>
-    <div id="detailSwiper">
-      <swiper class="detail-swiper">
-       <swiper-item v-for="(item, index) in topImages" :key="index">
-            <img :src="item" alt="">
-       </swiper-item>
-    </swiper>  
-    </div>
-      
+  <div id="detailSwiper">
+    <swiper class="detail-swiper">
+      <swiper-item v-for="(item, index) in topImages" :key="index">
+        <img :src="item" alt="" />
+      </swiper-item>
+    </swiper>
+  </div>
 </template>
 
 <script>
-import {Swiper, SwiperItem} from '@/components/common/swiper'
-
+import { Swiper, SwiperItem } from "@/components/common/swiper";
 
 export default {
-    name: "DetailSwiper",
-    components: {
-        Swiper,
-        SwiperItem      
-    },
-    props: {
-        topImages: {
-            type: Array,
-            default() {
-                return []
-            }
-        }
-        
+  name: "DetailSwiper",
+  components: {
+    Swiper,
+    SwiperItem
+  },
+  props: {
+    topImages: {
+      type: Array,
+      default() {
+        return [];
+      }
     }
-}
+  }
+};
 </script>
 
-<style> 
-    .detail-swiper {
-        height: 300px;
-        overflow: hidden;
-    }
+<style>
+.detail-swiper {
+  height: 300px;
+  overflow: hidden;
+}
 </style>

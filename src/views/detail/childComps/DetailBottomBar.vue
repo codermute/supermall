@@ -1,6 +1,6 @@
 <template>
   <div class="bottom-bar">
-      <div class="left">
+    <div class="left">
       <div>
         <i class="icon service"></i>
         <span class="text">客服</span>
@@ -18,7 +18,6 @@
       <div class="cart" @click="addToCart">加入购物车</div>
       <div class="buy">购买</div>
     </div>
-   
   </div>
 </template>
 
@@ -27,61 +26,62 @@ export default {
   name: "DetailBottomBar",
   methods: {
     addToCart() {
-      this.$emit('addCart')
+      this.$emit("addCart");
     }
   }
-}
+};
 </script>
 
 <style>
-    .bottom-bar {
-        height: 49px;
-        background:#fff;
-        position: fixed;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: flex;
-        text-align: center;
-    }
-    .left {
-    width: 50%;
-  }
-  .left,.right {
-    display: flex;
-  }
-  .left .icon {
-    display: block;
-    width: 24px;
-    height: 24px;
-    margin: 5px 21px 3px;
-    background:url('~@/assets/img/detail/detail_bottom.png') 0 0/100%;
-  }
-  .left .shop {
-    background-position: 0 57px;
-  }
-  .left .service {
-    background-position: 0 107px;
-  }
-  .text {
-    font-size: 14px;
-  }
-  .cart {
-    height: 49px;
-    width: 94px;
-    background-color: #fff737;
-    text-align: center;
-    color:#666;
-    font-size: 16px;
-    line-height: 49px;
-  }
-  .buy {
-    height: 49px;
-    width: 94px;
-    background-color: var(--color-tint);
-    text-align: center;
-    color:#fff;
-    font-size:16px;
-    line-height: 49px;
-  }
+.bottom-bar {
+  height: 49px;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  text-align: center;
+}
+.left {
+  width: 50%;
+}
+.left,
+.right {
+  display: flex;
+}
+.left .icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 5px 21px 3px;
+  background: url("~@/assets/img/detail/detail_bottom.png") 0 0/100%;
+}
+.left .shop {
+  background-position: 0 57px;
+}
+.left .service {
+  background-position: 0 107px;
+}
+.text {
+  font-size: 14px;
+}
+.cart {
+  height: 49px;
+  width: 94px;
+  background-color: #fff737;
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  line-height: 49px;
+}
+.buy {
+  height: 49px;
+  width: 94px;
+  background-color: var(--color-tint);
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 49px;
+}
 </style>

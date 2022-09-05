@@ -9,7 +9,6 @@ const Detail = () => import('../views/detail/Detail')
 const Thelogin = () => import('../views/thelogin/Thelogin')
 const Registered = () => import('../views/registered/Registered')
 
-
 Vue.use(VueRouter)
 
 const routes = [
@@ -53,4 +52,3 @@ const router = new VueRouter({
 })
 
 export default router
-

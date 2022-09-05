@@ -1,36 +1,36 @@
 <template>
   <div class="cart-list">
-      <!-- <div class="content"> -->
-          <!-- <li v-for="(item,index) in cartList" :key="index"></li> -->
-        <cart-list-item v-for="(item,index) in cartList" :key="index" :product="item"/>
-      <!-- </div> -->
+    <cart-list-item
+      v-for="(item, index) in cartList"
+      :key="index"
+      :product="item"
+    />
   </div>
 </template>
 
 <script>
-import CartListItem from './CartListItem'
+import CartListItem from "./CartListItem";
 
-import { mapGetters } from 'vuex'
-
+import { mapGetters } from "vuex";
 
 export default {
-  name: 'CartList',
-  components: {  
-      CartListItem
+  name: "CartList",
+  components: {
+    CartListItem
   },
-    computed: {
-        ...mapGetters(['cartList'])
-    },
-}
+  computed: {
+    ...mapGetters(["cartList"])
+  }
+};
 </script>
 
 <style>
 .cart-list {
-    height: calc(100% - 44px - 49px);
+  height: calc(100% - 44px - 49px);
 }
 
- .content {
-     height: 100%;
-     overflow: hidden;
- }
+.content {
+  height: 100%;
+  overflow: hidden;
+}
 </style>
