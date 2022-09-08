@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <nav-bar class="zujian">
+  <div class="cart">
+    <nav-bar>
       <div slot="center">购物车({{ Length }})</div>
     </nav-bar>
 
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import NavBar from "../../components/common/navbar/NavBar.vue";
+import NavBar from "@/components/common/navbar/NavBar.vue";
 import CartList from "./childComps/CartList";
 import CartBottomBar from "./childComps/CartBottomBar";
 
@@ -29,15 +29,3 @@ export default {
   }
 };
 </script>
-
-<style>
-.zujian {
-  background-color: var(--color-tint);
-  color: #fff;
-  /* position: absolute; */
-}
-/* .slot {
-      text-align: center;
-      margin: 0 auto;
-    /* }   */
-</style>
