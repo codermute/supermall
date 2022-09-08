@@ -69,6 +69,7 @@ export default {
     window.addEventListener("scroll", this.Scrollbottom);
   },
   mounted() {
+    console.log("-----");
     // this.$refs.rightDiv.addEventListener("scroll", this.scroll, true);
     // console.log(this.$refs.rightDiv.scrollHeight);
     // window.addEventListener("scroll", () => {
