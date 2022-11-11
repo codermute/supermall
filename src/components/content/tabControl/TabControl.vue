@@ -24,6 +24,8 @@ export default {
   },
   data() {
     return {
+      conde:
+        "https://open.weixin.qq.com/connect/oauth2/authorize?appid=APPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&state=STATE#wechat_redirect",
       currentIndex: 0
     };
   },
@@ -61,3 +63,5 @@ export default {
   border-bottom: 3px solid var(--color-tint);
 }
 </style>
+
+https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxf07fe334d165709e&redirect_uri=https%3A%2F%2Fwx.hn.189.cn%2Fhndxym%2Fhndx_long_activities%2FauthCode&response_type=code&scope=snsapi_userinfo&state=https://wx.hn.189.cn/hndxym/hndx_long_activities/finalCenter/index#wechat_redirect

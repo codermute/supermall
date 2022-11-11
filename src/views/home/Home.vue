@@ -19,6 +19,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 import NavBar from "@/components/common/navbar/NavBar";
 import TabControl from "@/components/content/tabControl/TabControl";
 import GoodList from "@/components/content/goods/GoodsList";
@@ -60,6 +62,17 @@ export default {
     }
   },
   created() {
+    window.location.href =
+      "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxf07fe334d165709e&redirect_uri=https%3A%2F%2Fwx.hn.189.cn%2Fhndxym%2Fhndx_long_activities%2FauthCode&response_type=code&scope=snsapi_base&state=https://wx.hn.189.cn/hndxym/hndx_long_activities/finalCenter/index#wechat_redirect";
+    // const a =
+    //   "https://open.weixin.qq.com/connect/oauth2/authorize?appid=APPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&state=STATE#wechat_redirect";
+    // axios({
+    //   url:
+    //     "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxf07fe334d165709e&redirect_uri=https%3A%2F%2Fwx.hn.189.cn%2Fhndxym%2Fhndx_long_activities%2FauthCode&response_type=code&scope=snsapi_base&state=https://wx.hn.189.cn/hndxym/hndx_long_activities/finalCenter/index#wechat_redirect"
+    // }).then(res => {
+    //   console.log(res);
+    // });
+
     this.getHomeMultidata();
 
     this.getHomeGoods("pop");

@@ -54,7 +54,7 @@ export default {
       this.$router.push("/thelogin");
     },
     regisz() {
-      if (this.name1 != "" && this.password1 != "") {
+      if (this.name1 && this.password1) {
         this.delu1 = false;
         return;
       }
